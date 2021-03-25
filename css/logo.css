@@ -1,6 +1,46 @@
 .main-logo{
     display: flex;
     align-items: center;
+    position: relative;
+}
+.main-logo .custom--lateral-rss{
+    position: absolute;
+    top: 113px;
+    width: 20px;
+    height: 100px;
+    left: 39px;
+}
+.follow-us{
+    margin-top: 90px;
+    transform: rotate(-90deg);
+}
+.follow-us::after{
+    content: "Síguenos";
+    transform: rotate(-90deg);
+    color: white;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-logo .custom--lateral-rss .social{
+    margin:20px 0px;
+}
+.social{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.social.facebook{
+    background-image: url(../images/rrss/facebook.png);
+}
+.social.instagram{
+    background-image: url(../images/rrss/instagram.png);
+}
+.social.youtube{
+    background-image: url(../images/rrss/youtube.png);
 }
 .main-logo img.logo-brand{
     width: 100%;
@@ -17,9 +57,11 @@
     text-align: center;
     border: 2px dashed black;
     width: 40%;
+    padding: 33px 0px;
 }
 .custom--logo img {
     max-width: 100%;
+    min-width: 376px;
 }
 
 .logo-mobile{

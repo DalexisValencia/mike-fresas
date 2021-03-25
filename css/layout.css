@@ -97,7 +97,9 @@ ul li{
     .custom--fixed-image{
         bottom: -44.73px;
     }
-    
+    .custom--lateral-rss{
+        display: none;
+    }
 }
 @media (max-width: 960px){
     html{

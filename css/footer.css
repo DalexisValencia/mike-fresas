@@ -10,8 +10,12 @@
     background-color: #000000;
     color: white;
 }
-.legal img{
-    max-width: 100%;
+.custom--footer .legal{
+   background-image: url(../images/footer/banner-footer-desktop.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 65px;
 }
 .custom--footer section.footer-navigation{
     background-color: #4e4e4e;
@@ -68,4 +72,14 @@
         width: 100% !important;
         text-align: center;
     }
+    .custom--footer .legal{
+        background-size: 100%;
+     }
+}
+@media (max-width: 960px){ 
+    .custom--footer .legal{
+        height: 151px !important;
+        background-image: url(../images/footer/banner-footer-mobile.png);
+        background-size: contain !important;
+     }
 }
