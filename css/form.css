@@ -1,0 +1,220 @@
+header.title{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+header.title h3{
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "cinnabar_brush";
+    margin: 0px;    
+    width: 80%;
+}
+.mobile{
+    display: none;
+}
+header.title h3 span{
+    color: #ffd100;
+}
+.custom--form__fieldset{
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    min-inline-size: min-content;
+    border-bottom-style: none;
+    border-width: 0px;
+    padding: 5px 0px 8px !important;
+}
+.custom--form__fieldset.with-label > .custom--input__label{
+    font-family: Arial, sans-serif;
+    margin-bottom: 0 !important;
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 200;
+}
+.custom--form__fieldset.with-label .is-required{
+    color: red !important;
+    font-family: Arial, sans-serif;
+}
+
+.custom--input,
+.custom--input__select{
+    max-width: 100%;
+    min-width: 100%;
+    width: 98%;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 0.6rem;
+    background: transparent;
+    background-image: url(../images/form/input.png);
+    background-size: 100% 100%;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    height: calc(1.5em + 1.5rem + 2px);
+    padding: .7rem 30px;
+    outline: 0 none;
+}
+.custom--input.secondary,
+.custom--input__select.secondary{
+    background-image: url(../images/form/input-secondary.png);
+}
+.custom--input.tertiary,
+.custom--input__select.tertiary{
+    background-image: url(../images/form/input-tertiary.png);
+}
+.custom--input__select{
+    appearance: inherit;
+}
+.custom--input__select option{
+    background-color: red !important;
+    height: calc(1.5em + 1.5rem + 2px);
+}
+.custom--input__select::before{
+    content: "arrow";
+
+}
+.custom--form__birthdate{
+    display: flex;
+    justify-content: space-between;
+}
+.custom--form__birthdate .custom--input{
+    min-width: 28% !important;
+    max-width: 28% !important;
+    width: 28%;
+}
+.custom--form__birthdate .custom--input.birthdate-dd{
+    background-image: url(../images/form/age-dd.png);
+    padding: 0px !important;
+    text-align: center;
+}
+.custom--form__birthdate .custom--input.birthdate-mm{
+    background-image: url(../images/form/age-mm.png);
+    padding: 0px !important;
+    text-align: center;
+}
+.custom--form__birthdate .custom--input.birthdate-aa{
+    background-image: url(../images/form/age-aa.png);
+    padding: 0px !important;
+    text-align: center;
+}
+
+.custom--input::placeholder {
+    color: #fff !important;
+    opacity: 1;
+}
+
+.custom--input__checkout{
+    padding: 5px 10px;
+}
+
+.custom--input__checkout span.like-label, 
+.custom--input__checkout a{
+    color: #fff;
+    font-size: 0.5rem;
+    font-family: Arial, sans-serif;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+/*checkout*/
+.custom--input__checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px 12px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 16px;
+}
+
+.custom--input__checkout input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom--input__checkout .checkmark {
+    display: inline-block;
+    height: 25px;
+    width: 20px;
+    /*background-color: #000;*/
+    position: relative;
+    margin-right: 10px;
+    background: url(../images/form/checkout.png) no-repeat center;
+}
+
+.custom--input__checkout:hover input ~ .checkmark {
+    background: url(../images/form/checkout.png) no-repeat center;
+}
+
+.custom--input__checkout input:checked ~ .checkmark {
+    background: url(../images/form/checkout.png) no-repeat center;
+}
+
+.custom--input__checkout .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom--input__checkout input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom--input__checkout .checkmark:after {
+    left: 8px;
+    top: 5px;
+    width: 2px;
+    height: 10px;
+    border: solid #ffd100;
+    border-width: 0 2.4px 2.4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom--input__button{
+    background: url(../images/form/btn.png) no-repeat center;
+    background-size: contain;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-family: "cinnabar_brush";
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    min-width: 150px;
+    padding: 9px 12px;
+}
+.custom-input__footer{
+    width: 100%;
+    margin:20px 0;
+}
+
+@media (max-width: 599px) {
+    .custom--input__checkout .checkmark{
+        min-width: 20px;
+        max-width: 20px;
+        width: 20px;
+        min-height: 20px;
+        max-height: 20px;
+        height: 20px;
+    }
+    .custom--input__checkout .checkmark:after {
+        left: 8px;
+        top: 3px;
+    }
+}

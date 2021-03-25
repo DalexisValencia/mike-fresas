@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <main class="custom--main">
+        <header class="main-logo">
+            <img src="images/Logo.png" alt="Mike's" title="Mike's" class="logo-brand">
+            <img src="images/advirsment.png" alt="Solo mayores de 18 años" title="Solo mayores de 18 años" class="advirsment-ad">
+        </header>
+        <div class="custom--container">
+           <section class="custom--logo">
+                <img src="images/image-form-desktop.png" alt="tu tranqui, No venderemos tus datos" title="tu tranqui, no venderemos tus datos" class="logo-desktop">
+                <img src="images/image-form-desktope.png" alt="tu tranqui, No venderemos tus datos" title="tu tranqui, no venderemos tus datos" class="logo-mobile">
+            </section>
+            <section class="custom--form">
+                <header class="title">
+                    <h3>
+                        DEJA TUS DATOS Y PODRÁS GANAR <span>4PACK</span> GRATIS
+                    </h3>
+                    <h3 class="mobile">
+                        REGÍSTRATE <span>DE-FRESA</span> Y GANA
+                    </h3>
+                </header>
+                <form class="custom--row">
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="NOMBRE" td-type="firstname" autocomplete="off" type="text" id="edit-name" name="name" value="" size="60" maxlength="100" class="custom--input" required="required">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="APELLIDO" td-type="lastname" autocomplete="off" type="text" id="edit-lastname" name="lastname" value="" size="60" maxlength="100" class="custom--input secondary" required="required" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="CORREO" td-type="email" autocomplete="off" type="email" id="edit-email" name="email" value="" size="60" maxlength="50" required="required" class="custom--input secondary" aria-required="true">
+                        </fieldset>
+                    </div>
+                    
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="TELÉFONO" min="1" step="1" td-type="phone" autocomplete="off" type="number" id="edit-phone" name="phone" value="" required="required" class="custom--input secondary" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <select td-type="gender" autocomplete="off" id="edit-gender" name="gender" class="custom--input__select" required="required">
+                                <option value="" selected="selected">Género</option>
+                                <option value="F">Femenino</option>
+                                <option value="M">Masculino</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset custom--form__birthdate">
+                            <input placeholder="DD" autocomplete="off" type="number" id="edit-document" name="document" value="" step="1" class="custom--input birthdate-dd" required="required" aria-required="true">
+                            <input placeholder="MM" autocomplete="off" type="number" id="edit-document" name="document" value="" step="2" class="custom--input birthdate-mm" required="required" aria-required="true">
+                            <input placeholder="AAAA" autocomplete="off" type="number" id="edit-document" name="document" value="" step="3" class="custom--input birthdate-aa" required="required" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <select  autocomplete="off" id="edit-gender" name="gender" class="custom--input__select secondary" required="required">
+                                <option value="" selected="selected">CIUDAD</option>
+                                <option value="F">Femenino</option>
+                                <option value="M">Masculino</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="DIRECCIÓN" min="1" step="1" autocomplete="off" type="number" name="phone" value="" required="required" class="custom--input" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <select  autocomplete="off" id="edit-gender" name="gender" class="custom--input__select" required="required">
+                                <option value="" selected="selected">¿CUÁL QUISIERAS QUE FUERA EL PRÓXIMO SABOR DE MIKE'S?</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <select  autocomplete="off" id="edit-gender" name="gender" class="custom--input__select tertiary" required="required">
+                                <option value="" selected="selected">¿DONDE PREFIERES DISFRUTAR TUS MIKE´S?</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <article class="custom-input__footer">
+                        <div class="custom--col__full custom--text__center">
+                            <label class="custom--input__checkout">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="like-label">
+                                    Acepto
+                                    <a href="https://www.backus.pe/sites/g/files/yrakuj241/files/2020-08/TERMINOS%20Y%20CONDICIONES%20GENERALES%20-%20PA%CC%81GINAS%20Y%20APLICACIONES%20%28PERU%29.pdf" target="_blank">términos y condiciones</a> y <a href="https://www.backus.pe/sites/g/files/yrakuj241/files/2020-08/POLII%CC%81TICA%20DE%20PRIVACIDAD%20Y%20PROTECCIO%CC%81N%20DE%20DATOS%20PERSONALES%20PERU%CC%81%202020_1.pdf" target="_blank">
+                                        políticas de privacidad
+                                    </a> <span class="required">*</span>
+                                </span>
+                            </label>
+                        </div>
+    
+                        <div class="custom--col__full custom--text__center">
+                            <label class="custom--input__checkout">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="like-label">
+                                    Deseo recibir información comercial y eventos de Backus y sus marcas asociadas
+                                </span>
+                            </label>
+                        </div>
+                    </article>
+
+                    <div class="custom--col__full custom--text__center">
+                        <button type="submit" id="submit" name="op" value="ENVIAR" class="custom--input__button">
+                            ENVIAR
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <section class="custom--fixed-image">
+            <img src="images/packshot.png" alt="packshot" title="packshot" class="m--5" style="display:none">
+            <img src="images/packshot-mobile.png" alt="packshot" title="packshot" class="m--5">
+        </section>
+    </main>
+    <footer class="custom--footer">
+        <article class="legal">
+            <img src="images/form/banner-footer.png" alt="packshot" title="packshot" class="m--5">
+        </article>
+        <section class="footer-navigation">
+            <nav>
+                <ul class="full">
+                    <li>Terminos de uso perú</li>
+                    <li>Hablemos de alcohol</li>
+                    <li>Politica de protección de datos perú</li>
+                    <li>Contáctenos</li>
+                </ul>
+                <ul>
+                    <li>Politica de protección de datos personales</li>
+                    <li>Solicitud de ejercicio derechos arco</li>
+                </ul>
+            </nav>
+            <article class="contact-us">
+
+            </article>
+        </section>
+    </footer>
+</body>
+</html>

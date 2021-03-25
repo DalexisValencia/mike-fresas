@@ -1,0 +1,42 @@
+.main-logo{
+    display: flex;
+    align-items: center;
+}
+.main-logo img.logo-brand{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+.main-logo img.advirsment-ad{
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    margin-left: 35px;
+}
+.custom--logo{
+    text-align: center;
+    border: 2px dashed black;
+    width: 40%;
+}
+.custom--logo img {
+    max-width: 100%;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 960px){
+    .main-logo{
+        justify-content: center;
+    }
+    .main-logo img.advirsment-ad {
+        width: 75%;
+    }
+}
+@media (max-width: 320px){
+    .logo-mobile {
+        display: block;
+        width: 100%;
+    }
+}
