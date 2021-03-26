@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById("modal");
-    var openModal = document.getElementById("exampleBtn");
     var closeModal = document.getElementById("closeModal");
     var openModalClass = document.getElementsByClassName('openModal');
     for (let el of openModalClass) {
