@@ -51,18 +51,12 @@ ul li {
     text-align: center;
 }
 
-
-/*v-row*/
-
 .custom--row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 2rem 0;
 }
-
-
-/*v-col*/
 
 .custom--col {
     width: 49.8%;
