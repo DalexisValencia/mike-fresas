@@ -84,6 +84,7 @@
     }
     .main-logo img.advirsment-ad {
         width: 75%;
+        max-width: 75%;
     }
 }
 
