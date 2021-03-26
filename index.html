@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="js/modal.js" lang="javasc"></script>
 </head>
+
 <body>
     <main class="custom--main">
+        <button id="exampleBtn" data-modal="push3">
+            Abrir modal (push1)
+        </button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close" id="closeModal">
+                    <span>CERRAR</span>
+                    <span class="icon"></span>
+                </div>
+                <article id="sucess-register" class="modal-body">
+                    <h2 class="modal-title mark push1 push2">¡Registro exitoso!</h2>
+                    <h2 class="modal-title push3">
+                        QUÉ PENA, <span>LOS CÓDIGOS</span> SE HAN AGOTADO
+                    </h2>
+                    <p class="modal-text push1">
+                        Canjea tu 4pack gratis en <br> <b>www.backusya.pe</b>
+                    </p>
+                    <p class="modal-text push2">
+                        Ya no hay 4packs gratis, pero tranqui,
+                        <br> te regalamos <b>!30% de descuento¡</b> <br> canjealo en
+                        <a href="www.backusya.pe"><b>www.backusya.pe</b></a>
+                    </p>
+                    <p class="modal-text push3">
+                        Quédate atento a nuestros canales para conocer nuestras <br> <b>próximas promociones</b>
+                    </p>
+                    <fieldset class="custom--form__fieldset custom--form__fieldset--modal push1 push2">
+                        <input placeholder="" autocomplete="off" type="text" name="code" value="" size="60" maxlength="100" class="custom--input__modal" required="required">
+                    </fieldset>
+                    <div class="shared push1">
+                        <span>Compartir:</span>
+                        <a href="https://www.youtube.com/" class="social youtube" target="_blank"></a>
+                        <a href="https://www.facebook.com/" class="social facebook" target="_blank"></a>
+                        <a href="https://www.instagram.com/?hl=es" class="social instagram" target="_blank"></a>
+                    </div>
+                </article>
+            </div>
+        </div>
         <header class="main-logo">
             <img src="images/Logo.png" alt="Mike's" title="Mike's" class="logo-brand">
             <img src="images/advirsment.png" alt="Solo mayores de 18 años" title="Solo mayores de 18 años" class="advirsment-ad">
@@ -24,7 +65,7 @@
             </div>
         </header>
         <div class="custom--container">
-           <section class="custom--logo">
+            <section class="custom--logo">
                 <img src="images/image-form-desktop.png" alt="tu tranqui, No venderemos tus datos" title="tu tranqui, no venderemos tus datos" class="logo-desktop">
                 <img src="images/image-form-desktope.png" alt="tu tranqui, No venderemos tus datos" title="tu tranqui, no venderemos tus datos" class="logo-mobile">
             </section>
@@ -55,7 +96,7 @@
                             <input placeholder="CORREO" td-type="email" autocomplete="off" type="email" id="edit-email" name="email" value="" size="60" maxlength="50" required="required" class="custom--input secondary" aria-required="true">
                         </fieldset>
                     </div>
-                    
+
                     <div class="custom--col">
                         <fieldset class="custom--form__fieldset">
                             <input placeholder="TELÉFONO" min="1" step="1" td-type="phone" autocomplete="off" type="number" id="edit-phone" name="phone" value="" required="required" class="custom--input secondary" aria-required="true">
@@ -82,7 +123,7 @@
 
                     <div class="custom--col">
                         <fieldset class="custom--form__fieldset">
-                            <select  autocomplete="off" id="edit-gender" name="gender" class="custom--input__select secondary" required="required">
+                            <select autocomplete="off" id="edit-gender" name="gender" class="custom--input__select secondary" required="required">
                                 <option value="" selected="selected">CIUDAD</option>
                                 <option value="F">Femenino</option>
                                 <option value="M">Masculino</option>
@@ -98,7 +139,7 @@
 
                     <div class="custom--col">
                         <fieldset class="custom--form__fieldset">
-                            <select  autocomplete="off" id="edit-gender" name="gender" class="custom--input__select" required="required">
+                            <select autocomplete="off" id="edit-gender" name="gender" class="custom--input__select" required="required">
                                 <option value="" selected="selected">¿CUÁL QUISIERAS QUE FUERA EL PRÓXIMO SABOR DE MIKE'S?</option>
                             </select>
                         </fieldset>
@@ -106,7 +147,7 @@
 
                     <div class="custom--col">
                         <fieldset class="custom--form__fieldset">
-                            <select  autocomplete="off" id="edit-gender" name="gender" class="custom--input__select tertiary" required="required">
+                            <select autocomplete="off" id="edit-gender" name="gender" class="custom--input__select tertiary" required="required">
                                 <option value="" selected="selected">¿DONDE PREFIERES DISFRUTAR TUS MIKE´S?</option>
                             </select>
                         </fieldset>
@@ -125,7 +166,7 @@
                                 </span>
                             </label>
                         </div>
-    
+
                         <div class="custom--col__full custom--text__center">
                             <label class="custom--input__checkout">
                                 <input type="checkbox">
@@ -171,4 +212,6 @@
         </section>
     </footer>
 </body>
+
+
 </html>

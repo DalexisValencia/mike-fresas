@@ -1,0 +1,142 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #e8074c;
+    margin: 15% auto;
+    width: 590px;
+    padding: 100px 25px 80px;
+    position: relative;
+}
+
+
+/* The Close Button */
+
+.close {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close span:not(.icon) {
+    font-family: "cinnabar_brush";
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.close span.icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/modal/close.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body h2 {
+    font-family: "cinnabar_brush";
+    text-align: center;
+    color: #fff;
+    font-size: 3.1rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.modal-body h2.mark {
+    color: #ffd100;
+}
+
+.modal-body h2 span {
+    color: #ffd100;
+}
+
+.modal-body p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0px;
+    padding: 0px 15%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-body p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.modal-body .shared {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
+
+.modal-body .shared span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 25px;
+}
+
+.modal-body .shared .social {
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.modal-body .shared .social.youtube {
+    width: 40px;
+    height: 40px;
+}
+
+.custom--form__fieldset.custom--form__fieldset--modal {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px 12% !important;
+}
+
+.custom--input__modal {
+    max-width: 100%;
+    min-width: 100%;
+    width: 98%;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 0.6rem;
+    background: transparent;
+    background-image: url(../images/modal/modal-input.png);
+    background-size: 100% 100%;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    height: 60px;
+    padding: .7rem 30px;
+    outline: 0 none;
+}
