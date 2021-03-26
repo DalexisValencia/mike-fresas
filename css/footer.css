@@ -1,4 +1,4 @@
-.custom--footer{
+.custom--footer {
     text-align: center;
     font-size: 11px;
     font-family: Arial, sans-serif;
@@ -6,80 +6,23 @@
     color: white;
 }
 
-.custom--footer article.article{
+.custom--footer article.article {
     background-color: #000000;
     color: white;
 }
-.custom--footer .legal{
-   background-image: url(../images/footer/banner-footer-desktop.png);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 65px;
-}
-.custom--footer section.footer-navigation{
-    background-color: #4e4e4e;
-    color: #959595;
-    display: flex;
-}
-.custom--footer section.footer-navigation nav{
-    padding: 0px 50px;
-    width: 70%;
-}
-.custom--footer section.footer-navigation nav ul{
-    margin:0px !important;
-    display: flex;
-    flex-wrap: wrap;
-}
-.custom--footer section.footer-navigation nav ul li{
-    padding: 10px 0px;
-    font-size: 0.7rem;
-    text-transform:uppercase ;
-    text-align: left;
-}
-.custom--footer section.footer-navigation nav ul li{
-    padding-right: 30px;
-}
-.custom--footer section.footer-navigation nav ul:not(.full) li{
-    padding-bottom: 0px !important;
-}
-.custom--footer section.footer-navigation nav ul:not(.full) li:first-child{
-    width: 208px;
-}
-.custom--footer section.footer-navigation nav ul:not(.full) li:last-child{
-    padding: 10px 40px;
+
+.custom--footer .legal {
+    background-image: url(../images/footer/banner-footer-desktop.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 65px;
 }
 
-.custom--footer section.footer-navigation .contact-us{
-    border:1px solid red;
-    width: 30%;
-}
-@media (max-width: 1022px){
-    .custom--footer section.footer-navigation{
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .custom--footer section.footer-navigation nav{
-        padding: 0px !important;
-        width: 100%;
-    }
-    .custom--footer section.footer-navigation nav ul{
-        width: 100%;
-
-    }
-    .custom--footer section.footer-navigation nav ul li{
-        width: 100% !important;
-        text-align: center;
-    }
-    .custom--footer .legal{
-        background-size: 100%;
-     }
-}
-@media (max-width: 960px){ 
-    .custom--footer .legal{
+@media (max-width: 960px) {
+    .custom--footer .legal {
         height: 151px !important;
         background-image: url(../images/footer/banner-footer-mobile.png);
         background-size: contain !important;
-     }
+    }
 }
