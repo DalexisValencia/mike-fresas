@@ -137,9 +137,6 @@ header.title h3 span {
     text-transform: uppercase;
 }
 
-
-/*checkout*/
-
 .custom--input__checkout {
     display: flex;
     justify-content: center;
